@@ -1,5 +1,6 @@
 {
   "editor.inlayHints.enabled": "off",
   "code-runner.showExecutionMessage": false,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": false
 }
