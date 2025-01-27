@@ -1,0 +1,21 @@
+{% extends "base_template.html" %}
+
+{% block page_heading %}
+<h1>Character Sheet</h1>
+<p>Thank you for submitting your details! Here is what you entered:</p>
+{% endblock %}
+
+{% block page_content %}
+<div class="container" id="printable-area">
+    <ul>
+        <li><strong>Name:</strong> {{ user_data.name }}</li>
+        <li><strong>Age:</strong> {{ user_data.age }}</li>
+        <li><strong>Favorite Hobby:</strong> {{ user_data.favorite_hobby }}</li>
+        <li><strong>Favorite Color:</strong> {{ user_data.favorite_color }}</li>
+        <li><strong>Lucky Number:</strong> {{ user_data.lucky_number }}</li>
+    </ul>
+</div>
+<button onclick="window.print()" class="btn btn-primary-outline">Print This Page</button>
+<a href="{{ url_for('index') }}"><button class="btn btn-primary">Start Over</button></a>
+{% endblock %}
+

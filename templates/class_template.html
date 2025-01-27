@@ -10,11 +10,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <div class="container-fluid text-center">
             <h1>{{ class_name.capitalize() }} Character Sheet
             </h1>
-            <a href="{{ url_for('index') }}">BACK</a>
+            <a href="{{ url_for('index') }}"><button class="btn btn-primary">Go Back</button></a>
         </div>
         <hr>
         <div class="container">
@@ -33,9 +33,11 @@
         <div class="container">
             {% block character_form %}{% endblock %}
         </div>
-        <footer class="container-fluid text-center">
+        <br>
+        <footer class="container-fluid text-center mt-auto">
+            <br>
             <p>Katerina Walter &copy; 2025</p>
-            <p>Data from <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
+            <p>Data from <a href="https://www.dndbeyond.com/">D&D Beyond</a></p>
         </footer>
     </body>
 </html>

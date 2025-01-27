@@ -1,0 +1,13 @@
+/* Printable character sheet */
+@media print {
+    /* Hide the "Go Back" link and button during print */
+    a, button {
+        display: none;
+    }
+
+    /* Add some margins and adjust font size for a clean print layout */
+    body {
+        margin: 1in;
+        font-size: 14px;
+    }
+}
