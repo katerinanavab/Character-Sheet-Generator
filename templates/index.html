@@ -6,47 +6,131 @@
 {% endblock %}
 
 {% block page_content %}
-<div class="container">
+<div class="container" id="class-btn-container">
     <div class="row">
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='barbarian') }}"><button class="btn btn-primary">Barbarian</button></a>
+            <a href="{{ url_for('class_page', class_name='barbarian') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Barbarian.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Barbarian</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='bard') }}"><button class="btn btn-primary">Bard</button></a>           
+            <a href="{{ url_for('class_page', class_name='bard') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Bard.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Bard</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='cleric') }}"><button class="btn btn-primary">Cleric</button></a>         
+            <a href="{{ url_for('class_page', class_name='cleric') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Cleric.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Cleric</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='druid') }}"><button class="btn btn-primary">Druid</button></a>
+            <a href="{{ url_for('class_page', class_name='druid') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Druid.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Druid</button>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='fighter') }}"><button class="btn btn-primary">Fighter</button></a>
+            <a href="{{ url_for('class_page', class_name='fighter') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Fighter.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Fighter</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='monk') }}"><button class="btn btn-primary">Monk</button></a>
+            <a href="{{ url_for('class_page', class_name='monk') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Monk.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Monk</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='paladin') }}"><button class="btn btn-primary">Paladin</button></a>
+            <a href="{{ url_for('class_page', class_name='paladin') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Paladin.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Paladin</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='ranger') }}"><button class="btn btn-primary">Ranger</button></a>
+            <a href="{{ url_for('class_page', class_name='ranger') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Ranger.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Ranger</button>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='rogue') }}"><button class="btn btn-primary">Rogue</button></a>
+            <a href="{{ url_for('class_page', class_name='rogue') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Rogue.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Rogue</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='sorcerer') }}"><button class="btn btn-primary">Sorcerer</button></a>
+            <a href="{{ url_for('class_page', class_name='sorcerer') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Sorcerer.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Sorcerer</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='warlock') }}"><button class="btn btn-primary">Warlock</button></a>
+            <a href="{{ url_for('class_page', class_name='warlock') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Warlock.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Warlock</button>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col">
-            <a href="{{ url_for('class_page', class_name='wizard') }}"><button class="btn btn-primary">Wizard</button></a>
+            <a href="{{ url_for('class_page', class_name='wizard') }}">
+                <div class="card">
+                    <img src="static/assets/ClassIcon-Wizard.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary w-100">Wizard</button>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>

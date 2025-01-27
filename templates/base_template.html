@@ -10,15 +10,22 @@
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-        <div class="container-fluid text-center">
-            {% block page_heading %}{% endblock %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <img src="static/assets/Logo-DnD.svg">
+                </div>
+                <div class="col-9">
+                    {% block page_heading %}{% endblock %}
+                </div>
+            </div>
         </div>
         <hr>
         {% block page_content %}{% endblock %}
         <br>
         <footer class="container-fluid text-center mt-auto">
             <br>
-            <p>By Katerina Walter &copy; 2025</p>
+            <p>Katerina Walter &copy; 2025</p>
             <p>Data from <a href="https://www.dndbeyond.com/">D&D Beyond</a></p>
         </footer>
     </body>
