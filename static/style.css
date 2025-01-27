@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Grenze+Gotisch:wght@100..900&family=IM+Fell+English+SC&family=Rosarivo:ital@0;1&display=swap');
 
-body {
+p {
     font-family: "Bellefair", serif;
 }
 
-h1, h2, h3 {
-    font-family: "IM Fell English SC", serif;
+h1, h2, h3, strong, button {
+    font-family: "IM Fell English SC" !important;
+}
+
+button {
+    background-color: #6F42C1 !important;
+    border-color: #432874 !important;
+    color: white !important;
+}
+button:hover {
+    background-color: #8B67CD !important;
+    border-color: #432874 !important;
+    color: white !important;
+    transform: scale(1.1);
 }
 
 #logo {
