@@ -1,3 +1,12 @@
+#logo {
+    max-height: 100px;
+}
+.card-img-top {
+    max-height: 100px;
+    padding-top: 10px;
+}
+
+
 /* Printable character sheet */
 @media print {
     /* Hide the "Go Back" link and button during print */
