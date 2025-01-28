@@ -11,16 +11,9 @@
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-        <div class="container-fluid" id="page-top">
-            <div class="row mt-4 mb-0">
-                <div class="col-10">
-                    <h1>{{ class_name.capitalize() }} Character Sheet</h1>
-                    <a href="{{ url_for('index') }}"><button class="btn btn-primary">⬅ Go Back</button></a>
-                </div>
-                <div class="col-2 text-center">
-                    <img src="/static/assets/Logo-DnD.svg" id="logo" class="img-fluid">
-                </div>
-            </div>
+        <div class="container-fluid pt-4 mb-0 text-center" id="page-top">
+            <h1>{{ class_name.capitalize() }} Character Sheet</h1>
+            <a href="{{ url_for('index') }}"><button class="btn btn-primary">⬅ Go Back</button></a>
         </div>
         <div class="container p-3" id="class-overview-container">
             <img src="/static/assets/scroll.png" class="img-fluid">
@@ -47,7 +40,7 @@
                 <div id="bgd-form-container">
 
                     <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" id="name" name="name" placeholder="Tav"required><br><br>
 
                     <label for="race">Race: </label>
                     <select id="race" name="race" required>
@@ -97,7 +90,8 @@
         <br>
         <footer class="container-fluid text-center mt-auto">
             <br>
-            <p>Katerina Walter &copy; 2025</p>
+            <img src="/static/assets/Logo-DnD.svg" id="logo" class="img-fluid">
+            <p>Coded by Katerina Walter &copy; 2025</p>
             <p class="small">Note that this generator is intended for BG3. Information from <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
         </footer>
     </body>

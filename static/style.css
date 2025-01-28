@@ -54,6 +54,7 @@ button:hover {
     display: inline-block;
     background: transparent;  
 }
+
 .overlay-text {
     position: absolute;
     top: 50%;
