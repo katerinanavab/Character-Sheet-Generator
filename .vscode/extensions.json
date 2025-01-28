@@ -1,7 +1,6 @@
 {
 	"recommendations": [
 		"ms-python.python",
-		"formulahendry.code-runner",
 		"fabiospampinato.vscode-monokai-night"
 	],
 

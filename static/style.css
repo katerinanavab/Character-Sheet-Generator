@@ -22,12 +22,12 @@ footer a {
     color: #6F42C1 !important;
 }
 
-button {
+.btn-primary {
     background: #6F42C1 !important;
     border-color: #432874 !important;
     color: white !important;
 }
-button:hover {
+.btn-primary:hover {
     background: #8B67CD !important;
     border-color: #432874 !important;
     color: white !important;
@@ -76,12 +76,13 @@ button:hover {
 
 /* Printable character sheet */
 @media print {
-    /* Hide the "Go Back" link and button during print */
-    a, button {
+    /* Hide elements during print */
+    a, button, footer {
         display: none;
     }
-
-    /* Add some margins and adjust font size for a clean print layout */
+    #printable-area {
+        border: 2px solid black;
+    }
     body {
         margin: 1in;
         font-size: 14px;

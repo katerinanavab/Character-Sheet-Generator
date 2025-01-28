@@ -6,19 +6,22 @@
 
 {% block page_content %}
 
-<div class="container" id="printable-area">
-    <ul>
-        <li><strong>Name: </strong> {{ user_data.name }}</li>
-        <li><strong>Race: </strong> {{ user_data.race }}</li>
-        <li><strong>Background: </strong> {{ user_data.background }}</li>
+<div class="container rounded" id="printable-area">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Name: </strong>
+            <span>{{ user_data.name }}</span></li>
+        <li class="list-group-item"><strong>Race: </strong>
+            <span>{{ user_data.race }}</span></li>
+        <li class="list-group-item"><strong>Background: </strong>
+            <span>{{ user_data.background }}</span></li>
     </ul>
 </div>
 
-<div class="container">
+<div class="container text-center mx-auto">
     <button onclick="window.print()" class="btn btn-primary">Print Page</button>
 </div>
 
-<div class="container">
+<div class="container text-center mx-auto">
     <a href="{{ url_for('index') }}"><button class="btn btn-danger">Start Over</button></a>
 </div>
 

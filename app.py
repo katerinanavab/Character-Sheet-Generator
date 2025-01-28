@@ -14,7 +14,7 @@ def class_page(class_name):
 def submit():
     # Collect form data
     user_data = {
-        'name': request.form.get('name'),
+        'name': request.form.get('name', 'Tav'),
         'race': request.form.get('race'),
         'background': request.form.get('background')
     }
