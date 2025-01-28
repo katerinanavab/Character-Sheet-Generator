@@ -23,7 +23,7 @@
             </div>
         </div>
         <hr>
-        <div class="container">
+        <div class="container" id="class-overview-container">
             <h3>{% block class_tagline %}{% endblock %}</h3>
             <p>{% block class_desc %}{% endblock %}</p>
             <p><strong>Primary Ability: </strong>
@@ -37,13 +37,60 @@
             </p>
         </div>
         <div class="container">
-            {% block character_form %}{% endblock %}
+            <form action="/submit" method="POST">
+                <div id="bgd-form-container">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="race">Race:</label>
+                    <select id="race" name="race" required>
+                        <option value="Dragonborn">Dragonborn</option>
+                        <option value="Drow">Drow</option>
+                        <option value="Dwarf">Dwarf</option>
+                        <option value="Elf">Elf</option>
+                        <option value="Githyanki">Githyanki</option>
+                        <option value="Gnome">Gnome</option>
+                        <option value="Half-Elf">Half-Elf</option>
+                        <option value="Halfling">Halfling</option>
+                        <option value="Half-Orc">Half-Orc</option>
+                        <option value="Human">Human</option>
+                        <option value="Tiefling">Tiefling</option>
+                    </select><br><br>
+
+                    <label for="background">Background:</label>
+                    <select id="background" name="background" required>
+                        <option value="Acolyte">Acolyte</option>
+                        <option value="Charlatan">Charlatan</option>
+                        <option value="Criminal">Criminal</option>
+                        <option value="Entertainer">Entertainer</option>
+                        <option value="Folk Hero">Folk Hero</option>
+                        <option value="Guild Artisan">Guild Artisan</option>
+                        <option value="Noble">Noble</option>
+                        <option value="Outlander">Outlander</option>
+                        <option value="Sage">Sage</option>
+                        <option value="Soldier">Soldier</option>
+                        <option value="Urchin">Urchin</option>
+                        <!-- TODO: Haunted One (Dark Urge only) -->
+                    </select><br><br>
+
+                </div>
+
+                <!-- TODO: Stats form for every class -->
+                <div id="stats-form-container">
+                    {% block stats_form %}{% endblock %}
+                </div>
+
+                <div id="submit-btn-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
         <br>
         <footer class="container-fluid text-center mt-auto">
             <br>
             <p>Katerina Walter &copy; 2025</p>
-            <p>Data from <a href="https://www.dndbeyond.com/">D&D Beyond</a></p>
+            <p class="small">Information from the <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
         </footer>
     </body>
 </html>

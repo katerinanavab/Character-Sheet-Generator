@@ -2,20 +2,25 @@
 
 {% block page_heading %}
 <h1>Character Sheet</h1>
-<p>Thank you for submitting your details! Here is what you entered:</p>
 {% endblock %}
 
 {% block page_content %}
+
 <div class="container" id="printable-area">
     <ul>
-        <li><strong>Name:</strong> {{ user_data.name }}</li>
-        <li><strong>Age:</strong> {{ user_data.age }}</li>
-        <li><strong>Favorite Hobby:</strong> {{ user_data.favorite_hobby }}</li>
-        <li><strong>Favorite Color:</strong> {{ user_data.favorite_color }}</li>
-        <li><strong>Lucky Number:</strong> {{ user_data.lucky_number }}</li>
+        <li><strong>Name: </strong> {{ user_data.name }}</li>
+        <li><strong>Race: </strong> {{ user_data.race }}</li>
+        <li><strong>Background: </strong> {{ user_data.background }}</li>
     </ul>
 </div>
-<button onclick="window.print()" class="btn btn-primary-outline">Print This Page</button>
-<a href="{{ url_for('index') }}"><button class="btn btn-primary">Start Over</button></a>
+
+<div class="container">
+    <button onclick="window.print()" class="btn btn-primary">Print Page</button>
+</div>
+
+<div class="container">
+    <a href="{{ url_for('index') }}"><button class="btn btn-danger">Start Over</button></a>
+</div>
+
 {% endblock %}
 

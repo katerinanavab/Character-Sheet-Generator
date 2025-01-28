@@ -15,10 +15,8 @@ def submit():
     # Collect form data
     user_data = {
         'name': request.form.get('name'),
-        'age': request.form.get('age'),
-        'favorite_color': request.form.get('favorite_color'),
-        'favorite_hobby': request.form.get('favorite_hobby'),
-        'lucky_number': request.form.get('lucky_number')
+        'race': request.form.get('race'),
+        'background': request.form.get('background')
     }
     return render_template('sheet.html', user_data=user_data)
 
