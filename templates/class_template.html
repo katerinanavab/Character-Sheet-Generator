@@ -11,7 +11,7 @@
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-        <div class="container-fluid">
+        <div class="container-fluid" id="page-top">
             <div class="row mt-4 mb-0">
                 <div class="col-10">
                     <h1>{{ class_name.capitalize() }} Character Sheet</h1>
@@ -22,28 +22,34 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="container" id="class-overview-container">
-            <h3>{% block class_tagline %}{% endblock %}</h3>
-            <p>{% block class_desc %}{% endblock %}</p>
-            <p><strong>Primary Ability: </strong>
-            {% block class_ability %}{% endblock %}
-            </p>
-            <p><strong>Hit Point Die: </strong>
-            {% block class_hp %}{% endblock %}
-            </p>
-            <p><strong>Saves: </strong>
-            {% block class_saves %}{% endblock %}
-            </p>
+        <div class="container p-3" id="class-overview-container">
+            <img src="/static/assets/scroll.png" class="img-fluid">
+            <div class="overlay-text">
+                <h3 class="text-nowrap">{% block class_tagline %}{% endblock %}</h3>
+                <p>{% block class_desc %}{% endblock %}</p>
+                <div class="row">
+                    <div class="col"><strong>Ability: </strong>
+                    <span>{% block class_ability %}{% endblock %}</span>
+                    </div>
+                    <div class="col"><strong>Hit Point Die: </strong>
+                    <span>{% block class_hp %}{% endblock %}</span>
+                    </div>
+                    <div class="col"><strong>Saves: </strong>
+                    <span>{% block class_saves %}{% endblock %}</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
+        <br>
+        <div class="container p-3" id="form-container">
+            <h2>Character Background</h2>
             <form action="/submit" method="POST">
                 <div id="bgd-form-container">
 
-                    <label for="name">Name:</label>
+                    <label for="name">Name: </label>
                     <input type="text" id="name" name="name" required><br><br>
 
-                    <label for="race">Race:</label>
+                    <label for="race">Race: </label>
                     <select id="race" name="race" required>
                         <option value="Dragonborn">Dragonborn</option>
                         <option value="Drow">Drow</option>
@@ -58,7 +64,7 @@
                         <option value="Tiefling">Tiefling</option>
                     </select><br><br>
 
-                    <label for="background">Background:</label>
+                    <label for="background">Background: </label>
                     <select id="background" name="background" required>
                         <option value="Acolyte">Acolyte</option>
                         <option value="Charlatan">Charlatan</option>
@@ -77,6 +83,8 @@
                 </div>
 
                 <!-- TODO: Stats form for every class -->
+                <h2>Character Abilities</h2>
+                <p>WORK IN PROGRESS...</p>
                 <div id="stats-form-container">
                     {% block stats_form %}{% endblock %}
                 </div>
@@ -90,7 +98,7 @@
         <footer class="container-fluid text-center mt-auto">
             <br>
             <p>Katerina Walter &copy; 2025</p>
-            <p class="small">Information from the <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
+            <p class="small">Note that this generator is intended for BG3. Information from <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
         </footer>
     </body>
 </html>

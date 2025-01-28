@@ -1,31 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Grenze+Gotisch:wght@100..900&family=IM+Fell+English+SC&family=Rosarivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=IM+Fell+English+SC&display=swap');
 
-p {
-    font-family: "Bellefair", serif;
+/* lightest purple: #E1D9F3 */
+
+p, input, select, span {
+    font-family: "Bellefair" !important;
 }
 
-h1, h2, h3, strong, button {
+h1, h2, h3, strong, button, label {
     font-family: "IM Fell English SC" !important;
 }
 
+.container {
+    background: white;
+}
+
+footer {
+    color: #432874 !important;
+}
+
+footer a {
+    color: #6F42C1 !important;
+}
+
 button {
-    background-color: #6F42C1 !important;
+    background: #6F42C1 !important;
     border-color: #432874 !important;
     color: white !important;
 }
 button:hover {
-    background-color: #8B67CD !important;
+    background: #8B67CD !important;
     border-color: #432874 !important;
     color: white !important;
     transform: scale(1.1);
 }
 
+#page-top {
+    background: linear-gradient(#C5B3E5, white);
+}
 #logo {
     max-height: 100px;
+}
+.card {
+    background: #FEF6CB !important;
+    border-color: black !important;
 }
 .card-img-top {
     max-height: 100px;
     padding-top: 10px;
+}
+
+#class-overview-container {
+    position: relative;
+    display: inline-block;
+    background: transparent;  
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#form-container {
+    border: 2px solid black;
+}
+    
+@media (max-width: 768px) {
+    .overlay-text {
+       font-size: 14px;
+    }
 }
 
 

@@ -10,7 +10,7 @@
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-        <div class="container-fluid">
+        <div class="container-fluid" id="page-top">
             <div class="row mt-4 mb-0">
                 <div class="col-10">
                     {% block page_heading %}{% endblock %}
@@ -20,13 +20,13 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <br>
         {% block page_content %}{% endblock %}
         <br>
         <footer class="container-fluid text-center mt-auto">
             <br>
             <p>Katerina Walter &copy; 2025</p>
-            <p class="small">Information from the <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
+            <p class="small">Note that this generator is intended for BG3. Information from <a href="https://bg3.wiki/">Baldur's Gate 3 Wiki</a> and <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
         </footer>
     </body>
 </html>
