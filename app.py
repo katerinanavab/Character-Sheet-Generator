@@ -19,7 +19,7 @@ def submit():
     user_data = {
         'name': name,
         'race': request.form.get('race'),
-        'background': request.form.get('background')
+        'alignment': request.form.get('alignment')
     }
     print(f"Received form data: {user_data}")
     return render_template('sheet.html', user_data=user_data)
