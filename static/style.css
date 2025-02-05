@@ -89,3 +89,60 @@ footer a {
         font-size: 14px;
     }
 }
+
+/* Custom Dropdown Styles */
+.dd-menu {
+    position: relative;
+    display: inline-block;
+}
+.dd-button {
+    font-family: "Bellefair" !important;
+    font-style: italic;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    min-width: 160px;
+}
+.dd-content {
+    font-family: "Bellefair" !important;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1000;
+}
+.dd-content div {
+    cursor: pointer;
+    user-select: none;
+}
+.dd-content div:hover {
+    background-color: #f1f1f1;
+}
+      
+/* Tooltip Styles */
+.dd-hover-info {
+    position: absolute;
+    background: #FEF6CB !important;
+    border-color: black !important;
+    z-index: 2000;
+    font-size: 14px;
+    display: none;
+    overflow: visible;
+    padding: .375rem .75rem;
+}
+.dd-hover-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+.dd-hover-info p {
+    margin: 0;
+    color: #555;
+}
+
+/* Ensure parent elements do not clip the tooltip */
+.dd-menu, #form-container {
+    overflow: visible !important;
+}
