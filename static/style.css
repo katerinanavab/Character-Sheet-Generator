@@ -79,6 +79,7 @@ footer a {
     /* Hide elements during print */
     a, button, footer {
         display: none;
+        opacity: 0;
     }
     #printable-area {
         border: 2px solid black;
