@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -8,7 +9,13 @@ def index():
 
 @app.route('/class/<class_name>')
 def class_page(class_name):
-    return render_template(f'classes/{class_name}.html', class_name=class_name)
+    with open('static/alignments.json', 'r') as f:
+        alignments = json.load(f)
+    with open('static/backgrounds.json', 'r') as f:
+        backgrounds = json.load(f)
+    with open('static/species.json', 'r') as f:
+        species = json.load(f)
+    return render_template(f'classes/{class_name}.html', class_name=class_name, alignments=alignments, backgrounds=backgrounds, species=species)
 
 @app.route('/submit', methods=['POST'])
 def submit():
