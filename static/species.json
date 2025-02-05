@@ -9,7 +9,7 @@
       "value": "Elf",
       "label": "Elf",
       "description": "The elves’ curiosity led many of them to explore other planes of existence.",
-      "traits": ["Darkvision 60ft, Elven Lineage, Fey Ancestry, Keen Senses, Trance"]
+      "traits": ["Darkvision 60ft", "Elven Lineage", "Fey Ancestry", "Keen Senses", "Trance"]
     },
     {
       "value": "Halfling",
