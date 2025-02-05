@@ -1,0 +1,26 @@
+[
+    {
+      "value": "Dwarf",
+      "label": "Dwarf",
+      "description": "Dwarves were raised from the earth in the elder days by a deity of the forge.",
+      "traits": ["Darkvision 120ft", "Dwarven Resilience", "Dwarven Toughness", "Stonecunning"]
+    },
+    {
+      "value": "Elf",
+      "label": "Elf",
+      "description": "The elves’ curiosity led many of them to explore other planes of existence.",
+      "traits": ["Darkvision 60ft, Elven Lineage, Fey Ancestry, Keen Senses, Trance"]
+    },
+    {
+      "value": "Halfling",
+      "label": "Halfling",
+      "description": "Halflings possess a brave and adventurous spirit that leads them on journeys of discovery.",
+      "traits": ["Brave", "Halfling Nimbleness", "Luck", "Naturally Stealthy"]
+    },
+    {
+      "value": "Human",
+      "label": "Human",
+      "description": "Found throughout the multiverse, humans are as varied as they are numerous.",
+      "traits": ["Resourceful", "Skillful", "Versatile"]
+    }
+]

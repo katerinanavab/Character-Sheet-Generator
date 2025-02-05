@@ -1,0 +1,26 @@
+[
+    {
+      "value": "Dwarf",
+      "label": "Dwarf",
+      "heading": "",
+      "description": ""
+    },
+    {
+      "value": "Elf",
+      "label": "Elf",
+      "heading": "",
+      "description": ""
+    },
+    {
+      "value": "Halfling",
+      "label": "Halfling",
+      "heading": "",
+      "description": ""
+    },
+    {
+      "value": "Human",
+      "label": "Human",
+      "heading": "",
+      "description": ""
+    }
+]

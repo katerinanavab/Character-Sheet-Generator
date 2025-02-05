@@ -35,38 +35,29 @@
         </div>
         <br>
         <div class="container p-3 rounded" id="form-container">
-            <h2>Character Background</h2>
+            <h2>Character Origin</h2>
             <form action="/submit" method="POST">
-                <div id="bgd-form-container">
+                <div id="origin-form-container">
 
                     <label for="name">Name: </label>
                     <input type="text" id="name" name="name" placeholder="Tav"><br><br>
 
-                    <label for="race">Race: </label>
-                    <select id="race" name="race" required>
-                        <option value="Dragonborn">Dragonborn</option>
-                        <option value="Dwarf">Dwarf</option>
-                        <option value="Elf">Elf</option>
-                        <option value="Gnome">Gnome</option>
-                        <option value="Half-Elf">Half-Elf</option>
-                        <option value="Halfling">Halfling</option>
-                        <option value="Half-Orc">Half-Orc</option>
-                        <option value="Human">Human</option>
-                        <option value="Tiefling">Tiefling</option>
-                    </select><br><br>
-
                     <label for="alignment">Alignment: </label>
                     <select id="alignment" name="alignment" required>
-                        <option value="ce">Chaotic Evil</option>
-                        <option value="cg">Chaotic Good</option>
-                        <option value="cn">Chaotic Neutral</option>
-                        <option value="le">Lawful Evil</option>
-                        <option value="lg">Lawful Good</option>
-                        <option value="ln">Lawful Neutral</option>
-                        <option value="ne">Neutral Evil</option>
-                        <option value="ng">Neutral Good</option>
-                        <option value="nn">Neutral Neutral</option>
+                        <option value="CE">Chaotic Evil</option>
+                        <option value="CG">Chaotic Good</option>
+                        <option value="CN">Chaotic Neutral</option>
+                        <option value="LE">Lawful Evil</option>
+                        <option value="LG">Lawful Good</option>
+                        <option value="LN">Lawful Neutral</option>
+                        <option value="NE">Neutral Evil</option>
+                        <option value="NG">Neutral Good</option>
+                        <option value="NN">Neutral Neutral</option>
                     </select><br><br>
+
+                    <!-- TODO: Species -->
+
+                    <!-- TODO: Background -->
 
                 </div>
 
@@ -78,7 +69,7 @@
                 </div>
 
                 <div id="submit-btn-container">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Generate Sheet</button>
                 </div>
             </form>
         </div>
@@ -86,8 +77,8 @@
         <footer class="container-fluid text-center mt-auto">
             <br>
             <img src="/static/assets/Logo-DnD.svg" id="logo" class="img-fluid">
-            <p>Coded by Katerina Walter 2025</p>
-            <p class="small">Data from <a href="https://www.dndbeyond.com/">D&D Beyond</a> and <a href="www.dungeonmastersvault.com">Dungeon Master's Vault</a>.</p>
+            <p>Coded by <a href="https://coderina.dev/">Katerina Walter</a></p>
+            <p class="small">Compatible with the <strong>2024 Player's Handbook</strong> rules. Information from <a href="https://www.dndbeyond.com/">D&D Beyond</a>.</p>
         </footer>
     </body>
 </html>
