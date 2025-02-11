@@ -2,25 +2,129 @@
     {
       "value": "Acolyte",
       "label": "Acolyte",
-      "description": "You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.",
+      "description": "You were a devoted servant in a place of worship. You learned the rituals of your faith and how to channel divine power as part of your service.",
+      "origin_feat": "Magic Initiate (Cleric)",
+      "ability_improvements": ["CHA", "INT", "WIS"],
       "skill_proficiencies": ["Insight", "Religion"]
+    },
+    {
+      "value": "Artisan",
+      "label": "Artisan",
+      "description": "You worked your way up from scrubbing floors to an apprenticeship creating your own crafts. You know how to schmooze a customer and have a keen eye for detail.",
+      "origin_feat": "Crafter",
+      "ability_improvements": ["DEX", "INT", "STR"],
+      "skill_proficiencies": ["Investigation", "Persuasion"]
+    },
+    {
+      "value": "Charlatan",
+      "label": "Charlatan",
+      "description": "You have learned to seek out a mark in taverns and pubs, and find the people most in search of less than honest goods, such as forgeries or sham magic items.",
+      "origin_feat": "Skilled",
+      "ability_improvements": ["CHA", "CON", "DEX"],
+      "skill_proficiencies": ["Deception", "Sleight of Hand"]
     },
     {
       "value": "Criminal",
       "label": "Criminal",
-      "description": "You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves’ guild and more fearsome lawbreakers.",
-      "skill_proficiencies": ["Stealth", "Sleight of Hand"]
+      "description": "Whether you were a member of a criminal crew or a solo thief who only looked out for yourself, you know the best ways to slice some purse strings or how to find alternative means to enter a locked shop.",
+      "origin_feat": "Alert",
+      "ability_improvements": ["CON", "DEX", "INT"],
+      "skill_proficiencies": ["Sleight of Hand", "Stealth"]
+    },
+    {
+      "value": "Entertainer",
+      "label": "Entertainer",
+      "description": "You’ve spent your life on either a literal or proverbial stage, performing for willing audiences. You have learned how to channel your talent for creation into a crowd-pleasing art form.",
+      "origin_feat": "Musician",
+      "ability_improvements": ["CHA", "DEX", "STR"],
+      "skill_proficiencies": ["Acrobatics", "Performance"]
+    },
+    {
+      "value": "Farmer",
+      "label": "Farmer",
+      "description": "You’ve tilled the soil or raised animals as livestock or to aid you in cultivating your fields. You’ve gained a healthy respect for nature, in both its bounty and its wrath.",
+      "origin_feat": "Tough",
+      "ability_improvements": ["CON", "STR", "WIS"],
+      "skill_proficiencies": ["Animal Handling", "Nature"]
+    },
+    {
+      "value": "Guard",
+      "label": "Guard",
+      "description": "You’ve put in your time standing watch over a city or location. You’ve had your head on a swivel, keeping a watchful eye on raiding enemies on one side of a wall or criminal elements on the other.",
+      "origin_feat": "Alert",
+      "ability_improvements": ["INT", "STR", "WIS"],
+      "skill_proficiencies": ["History", "Persuasion"]
+    },
+    {
+      "value": "Guide",
+      "label": "Guide",
+      "description": "Your life was mostly spent outdoors, exploring the natural wonders around you. In your travels, you learned the basics of how to channel the magic of the wild world around you.",
+      "origin_feat": "Magic Initiate (Druid)",
+      "ability_improvements": ["CON", "DEX", "WIS"],
+      "skill_proficiencies": ["Arcana", "History"]
+    },
+    {
+      "value": "Hermit",
+      "label": "Hermit",
+      "description": "Whether alone in a hut or as part of a monastery, you’ve spent a considerable amount of time outside the trappings of society. You’ve grown comfortable pondering the wonders and mysteries of creation.",
+      "origin_feat": "Healer",
+      "ability_improvements": ["CHA", "CON", "WIS"],
+      "skill_proficiencies": ["Medicine", "Religion"]
+    },
+    {
+      "value": "Merchant",
+      "label": "Merchant",
+      "description": "As an apprentice to a trader or shopkeeper, you traveled either supplying artisans with the materials they needed or acquiring their goods to sell to your customers. You know how to make a deal and how to handle a long journey.",
+      "origin_feat": "Lucky",
+      "ability_improvements": ["CHA", "CON", "INT"],
+      "skill_proficiencies": ["Animal Handling", "Persuasion"]
+    },
+    {
+      "value": "Noble",
+      "label": "Noble",
+      "description": "You grew up in the opulence and structure of wealth and societal privilege. You may have bristled against the restrictions and expectations of your role, but you learned a lot about courtly intrigue and the skills of leadership.",
+      "origin_feat": "Skilled",
+      "ability_improvements": ["CHA", "INT", "STR"],
+      "skill_proficiencies": ["History", "Persuasion"]
     },
     {
       "value": "Sage",
       "label": "Sage",
-      "description": "You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse—even the rudiments of magic—and your mind yearns for more.",
+      "description": "Your thirst for knowledge drew you to some of the greatest libraries and archives in the world. You’ve got a knack for research and perhaps a rudimentary knowledge of magic gleaned from a book or two.",
+      "origin_feat": "Magic Initiate (Wizard)",
+      "ability_improvements": ["CON", "INT", "WIS"],
       "skill_proficiencies": ["Arcana", "History"]
+    },
+    {
+      "value": "Sailor",
+      "label": "Sailor",
+      "description": "You called the open water your home, survived some of the sea’s harshest storms. You’ve swapped stories with the best of them, whether that’s on the barstool of a random port or the denizens of the world beneath the waves.",
+      "origin_feat": "Tavern Brawler",
+      "ability_improvements": ["DEX", "STR", "WIS"],
+      "skill_proficiencies": ["Acrobatics", "Perception"]
+    },
+    {
+      "value": "Scribe",
+      "label": "Scribe",
+      "description": "The written word has been your domain, either copying tomes, crafting government documents, or producing your own texts. Your eye for detail and ability to catch errors and mistakes is finely honed.",
+      "origin_feat": "Skilled",
+      "ability_improvements": ["DEX", "INT", "WIS"],
+      "skill_proficiencies": ["Investigation", "Perception"]
     },
     {
       "value": "Soldier",
       "label": "Soldier",
-      "description": "You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.",
+      "description": "You can hardly remember a time when you didn’t wield a weapon. You’re well-versed in the ways of battle and war to protect the realm, and you have the muscle memory to prove it.",
+      "origin_feat": "Savage Attacker",
+      "ability_improvements": ["CON", "DEX", "STR"],
       "skill_proficiencies": ["Athletics", "Intimidation"]
+    },
+    {
+      "value": "Wayfarer",
+      "label": "Wayfarer",
+      "description": "An urchin or societal castoff, you learned to survive. Forging your own path on the streets and possibly turning to crime when needed, you’ve managed to keep your pride and hope that destiny has more for you yet.",
+      "origin_feat": "Lucky",
+      "ability_improvements": ["CHA", "DEX", "WIS"],
+      "skill_proficiencies": ["Insight", "Stealth"]
     }
 ]
