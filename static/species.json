@@ -2,92 +2,92 @@
     {
       "value": "Aasimar",
       "label": "Aasimar",
-      "description": "",
+      "description": "Aasimar are mortals who carry a spark of the Upper Plains within their souls.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 60,
-      "traits": []
+      "traits": ["Celestial Resistance", "Healing Hands", "Light Bearer", "Celestial Revelation"]
     },
     {
       "value": "Dragonborn",
       "label": "Dragonborn",
-      "description": "",
+      "description": "The ancestors of dragonborn hatched from the eggs of chromatic and metallic dragons.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 60,
-      "traits": []
+      "traits": ["Dragon Ancestry", "Breath Weapon", "Damage Resistance", "Draconic Flight"]
     },
     {
       "value": "Dwarf",
       "label": "Dwarf",
-      "description": "",
+      "description": "Dwarves were raised from the earth in the elder days by a deity of the forge.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 120,
-      "traits": []
+      "traits": ["Dwarven Resilience", "Dwarven Toughness", "Stonecunning"]
     },
     {
       "value": "Elf",
       "label": "Elf",
-      "description": "",
+      "description": "The elves’ curiosity led many of them to explore other planes of existence.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 60,
-      "traits": []
+      "traits": ["Elven Lineage", "Fey Ancestry", "Keen Senses", "Trance"]
     },
     {
       "value": "Gnome",
       "label": "Gnome",
-      "description": "",
+      "description": "Gnomes are magical folk created by gods of invention, illusions, and life underground.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 60,
-      "traits": []
+      "traits": ["Gnomish Cunning", "Gnomish Lineage"]
     },
     {
       "value": "Goliath",
       "label": "Goliath",
-      "description": "",
+      "description": "Goliaths are distant descendants of giants and seek heights above those reached by their ancestors.",
       "type": "Humanoid",
       "speed": 35,
       "darkvision": 0,
-      "traits": []
+      "traits": ["Giant Ancestry", "Large Form", "Powerful Build"]
     },
     {
       "value": "Halfling",
       "label": "Halfling",
-      "description": "",
+      "description": "Halflings possess a brave and adventurous spirit that leads them on journeys of discovery.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 0,
-      "traits": []
+      "traits": ["Brave", "Halfling Nimbleness", "Luck", "Naturally Stealthy"]
     },
     {
       "value": "Human",
       "label": "Human",
-      "description": "",
+      "description": "Found throughout the multiverse, humans are as varied as they are numerous.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 0,
-      "traits": []
+      "traits": ["Resourceful", "Skillful", "Versatile"]
     },
     {
       "value": "Orc",
       "label": "Orc",
-      "description": "",
+      "description": "Orcs are equipped with gifts to help them wander great plains, vast caverns, and churning seas.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 120,
-      "traits": []
+      "traits": ["Adrenaline Rush", "Relentless Endurance"]
     },
     {
       "value": "Tiefling",
       "label": "Tiefling",
-      "description": "",
+      "description": "Tieflings are either born in the Lower Planes or have fiendish ancestors who originated there.",
       "type": "Humanoid",
       "speed": 30,
       "darkvision": 60,
-      "traits": []
+      "traits": ["Fiendish Legacy", "Otherworldly Presence"]
     }
 
 ]
